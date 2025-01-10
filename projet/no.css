@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-bottom: 5px solid #e74c3c;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #c0392b;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    margin-bottom: 30px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .display {
+    margin-top: 20px;
+  }
+  
+  .display div {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .display p {
+    font-size: 1.1em;
+  }
+  .displaydata {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .displaydata button {
+    background: #6582da;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .displaydata button:hover {
+    background: #000;
+  }
+  
+  .displaydata {
+    display: flex;
+    gap: 10px; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    margin: 20px; 
+  }
+  
+  
+  .article {
+    width: 20%;
+    margin: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 16px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    transition: transform 0.2s; 
+  }
+  
+  .article:hover {
+    transform: scale(1.02); /*    */
+  }
+  
+  .article h3 {
+    margin: 10px 0; /*     */
+    font-size: 1.5em; /*      */
+    color: #2c3e50; /*    */
+  }
+  
+  .article p {
+    margin: 10px 0; /* Espacement sous le contenu */
+    color: #555; /* Couleur du texte */
+  }
+  
+ 
+  
+
+  
+  /* Styles pour les icônes */
+  .article i {
+    font-size: 10px; /* Taille des icônes */
+    margin-bottom: 10px; /* Espacement sous l'icône */
+    color: #e7edf1; /* Couleur des icônes */
+  }
+  
+  /* Styles pour les actions */
+  .article-actions {
+    display: flex; /* Utiliser Flexbox pour les actions */
+    gap: 10px;
+    margin-top: 15px; /* Espacement au-dessus des actions */
+  }

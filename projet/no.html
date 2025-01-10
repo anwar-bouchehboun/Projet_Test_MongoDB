@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion de Contenus</title>
+    <link rel="stylesheet" href="no.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <!-- Page d'Accueil -->
+    <header class="header">
+      <div class="container">
+        <h1>Bienvenue sur le site de gestion de contenus</h1>
+        <p>
+          Gérez vos articles et blogs facilement avec une interface simple et
+          professionnelle.
+        </p>
+        <div class="buttons">
+          <a href="#articles" class="button">Gérer les Articles</a>
+          <a href="#blogs" class="button">Gérer les Blogs</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section Articles -->
+    <section class="section" id="articles">
+      <div class="container">
+        <h2>Gestion des Articles</h2>
+        <div class="form">
+          <input
+            type="text"
+            id="articleTitle"
+            placeholder="Titre de l'article"
+          />
+          <textarea
+            id="articleContent"
+            placeholder="Contenu de l'article"
+          ></textarea>
+          <div class="form-actions">
+            <button id="addArticleBtn" onclick="addArticle()">
+              Ajouter l'Article
+            </button>
+            <button
+              id="modifyArticleBtn"
+              style="display: none"
+              onclick="modifyArticle()"
+            >
+              Modifier l'Article
+            </button>
+          </div>
+        </div>
+        <div class="displaydata" id="articleDisplay">
+          <!-- Les articles seront affichés ici dynamiquement -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Blogs -->
+    <section class="section" id="blogs">
+      <div class="container">
+        <h2>Gestion des Blogs</h2>
+        <div class="form">
+          <input type="text" id="blogTitle" placeholder="Titre du blog" />
+          <textarea id="blogContent" placeholder="Contenu du blog"></textarea>
+          <div class="form-actions">
+            <button id="addBlogBtn" onclick="addBlog()">Ajouter le Blog</button>
+            <button 
+              id="modifyBlogBtn" 
+              style="display: none" 
+              onclick="modifyBlog()"
+            >
+              Modifier le Blog
+            </button>
+          </div>
+        </div>
+        <div class="display" id="blogDisplay">
+          <!-- Les blogs seront affichés ici dynamiquement -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="no.js"></script>
+  </body>
+</html>
+
